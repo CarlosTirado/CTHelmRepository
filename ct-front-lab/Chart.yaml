@@ -2,5 +2,5 @@ apiVersion: v2
 name: ct-front-lab
 description: A Helm chart for Kubernetes (Laboratorio de Carlos Tirado)
 type: application
-version: 0.1.0
+version: 0.1.1
 appVersion: "1.16.0"

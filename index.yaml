@@ -3,7 +3,7 @@ entries:
   ct-back-lab:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2023-09-09T17:11:56.286881-05:00"
+    created: "2023-09-09T17:14:17.1484135-05:00"
     description: A Helm chart for Kubernetes (Laboratorio de Carlos Tirado)
     digest: aa01be4384e784f9de42603a45ace9505a07b8fbeae18f7f80d44f0d90b36c84
     name: ct-back-lab
@@ -14,7 +14,17 @@ entries:
   ct-front-lab:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2023-09-09T17:11:56.286881-05:00"
+    created: "2023-09-09T17:14:17.1492486-05:00"
+    description: A Helm chart for Kubernetes (Laboratorio de Carlos Tirado)
+    digest: 18ecd8b9d96107743ba1fb1232e4f7587e98bf7ed4d04960ab24334294a7775f
+    name: ct-front-lab
+    type: application
+    urls:
+    - ct-front-lab-0.1.1.tgz
+    version: 0.1.1
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2023-09-09T17:14:17.1488572-05:00"
     description: A Helm chart for Kubernetes (Laboratorio de Carlos Tirado)
     digest: 91a3595957b184044b4e259ab7b6db92a4c288610b82c9244803bff249d31db5
     name: ct-front-lab
@@ -22,4 +32,4 @@ entries:
     urls:
     - ct-front-lab-0.1.0.tgz
     version: 0.1.0
-generated: "2023-09-09T17:11:56.286881-05:00"
+generated: "2023-09-09T17:14:17.1478301-05:00"
