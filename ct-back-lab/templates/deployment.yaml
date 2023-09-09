@@ -1,0 +1,24 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: back-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      solution: laboratorio
+      part: back
+  template:
+    metadata:
+      labels:
+        solution: laboratorio
+        part: back
+    spec:
+      containers:
+      - name: back-laboratorio
+        image: carlostirado/webapilaboratorio:136
+        ports:
+        - containerPort: 80
+        env:
+        - name: WebLabCt_ConnectionStrings__LaboratorioDatabaseStringConnection
+          value: "Data Source=server-db-ct-docker.database.windows.net; Initial Catalog=db-ct-lab-test-docker; User Id=ct-user-lab; Password=1.KarenVilla.1;TrustServerCertificate=true"
