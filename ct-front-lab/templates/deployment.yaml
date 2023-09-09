@@ -1,0 +1,24 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: front-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      solution: laboratorio
+      part: front
+  template:
+    metadata:
+      labels:
+        solution: laboratorio
+        part: front
+    spec:
+      containers:
+      - name: front-laboratorio
+        image: carlostirado/frontlaboratorio:139
+        ports:
+        - containerPort: 80
+        env:
+          - name: FrontLabCt_UrlBack
+            value: {{ .Values.urlBack }}
